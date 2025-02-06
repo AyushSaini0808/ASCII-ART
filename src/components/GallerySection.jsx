@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { galleryItems } from "../assets/images/gallery.js";
+import { galleryItems } from "../assets/gallery.js";
 
 export const GallerySection = ({ currentGalleryIndex, setCurrentGalleryIndex, onImageSelect}) => {
     const handleGalleryNavigation = (direction) => {

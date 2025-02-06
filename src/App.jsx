@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react'
-import {galleryItems} from "./assets/images/gallery.js";
+import {galleryItems} from "./assets/gallery.js";
 import {Upload, Download, Image as ImageIcon} from "lucide-react";
 import {GallerySection} from "./components/GallerySection.jsx";
 import UploadSection from "./components/UploadSection.jsx";
@@ -17,7 +17,7 @@ function App() {
     // Gets the canvas for rendering the ASCII art
     const canvasRef = useRef(null)
     // ASCII Char array stores characters in descending order of pixel coverage or the gray ramp
-    const asciiChar = ["@", "%", "#", "S", "%", "0", "?", "*", "+", ";", ":", ",", "."]
+    const asciiChar = ["@", "%", "#", "S", "%", "0", "?", "*", "+", ";", ":", ",", "."," "]
     const generateAsciiArt = (image, width = 100) => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
@@ -98,7 +98,7 @@ function App() {
     return (
         <>
             <div
-                className={"min-h-screen bg-[#0A0F1C] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"}>
+                className={"min-h-screen bg-[#0A0F1C] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,0,0,0.3),rgba(255,255,255,0))]"}>
                 <div className={"container mx-auto px-3 py-12"}>
                     <div className={"max-w-5xl text-center mx-auto"}>
                         <h1 className={"text-5xl mb-4 tracking-wider font-bold text-transparent bg-clip-text bg-gradient-to-r to-purple-400 from-blue-600"}>ASCII
