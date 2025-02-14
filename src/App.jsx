@@ -100,7 +100,7 @@ function App() {
             <div
                 className={"min-h-screen bg-[#0A0F1C] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,0,0,0.3),rgba(255,255,255,0))]"}>
                 <div className={"container mx-auto px-3 py-12"}>
-                    <div className={"max-w-5xl text-center mx-auto"}>
+                    <div className={"max-w-[80vw] text-center mx-auto"}>
                         <h1 className={"text-5xl mb-4 tracking-wider font-bold text-transparent bg-clip-text bg-gradient-to-r to-purple-400 from-blue-600"}>Pixel Poet</h1>
                         <p className={"text-white/40 text-xl "}>Transform your text into beautiful ASCII Art</p>
                         <GallerySection  currentGalleryIndex={currentGalleryIndex} setCurrentGalleryIndex={setCurrentGalleryIndex} onImageSelect={loadGalleryImage}/>
